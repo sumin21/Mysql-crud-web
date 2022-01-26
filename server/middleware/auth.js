@@ -1,5 +1,4 @@
-const {User} = require('../models/User');
-const mql = require('./models/mysql-db');
+const mql = require('../models/mysql-db');
 const jwt = require("jsonwebtoken");
 
 let auth = (req, res, next) => {
@@ -10,6 +9,8 @@ let auth = (req, res, next) => {
 
     jwt.verify(token, 'secretToken', (err, decoded) =>{
         //user id로 user 찾기
+        console.log(decoded)
+        console.log(token)
         mql.query('SELECT * FROM users WHERE id=? AND token=?', [decoded, token], (err, row) =>{
             if(err) throw err;
             if(row.length > 0){
