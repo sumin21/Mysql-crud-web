@@ -13,10 +13,13 @@ html,
     height: 100%;
     padding-top:4.2rem;
     padding-bottom:4.2rem;
-    /* background:rgba(0, 0, 0, 0.76); */
-    background-image: url('../../../../images/loginpageimg.png');
+    background-color:#fafafa;
+    /* background-image: url('../../../../images/loginpageimg.png'); */
     background-repeat: no-repeat;
     background-size : cover;
+    }
+    .landing-page-margin{
+      margin-top:4.2rem;
     }
     a{
      text-decoration:none !important;
@@ -36,17 +39,54 @@ html,
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.2);
-    border-radius: 1.1rem;
     outline: 0;
-    max-width: 500px;
+    max-width: 400px;
+     }
+     .email-box, .password-box{
+      margin-right:2rem;
+      margin-left:2rem;
+    }
+    .password-box{
+      margin-top:0.5rem;
+      margin-bottom: 1rem;
+    }
+     .login-text{
+       margin-top: 2rem;
+       font-family: 'Exo-Bold';
+       margin-bottom: 0;
+     }
+     .email-text, .password-text{
+       font-size: 13px;
+       font-family: 'Exo-Light';
+     }
+     .form-control{
+      font-family: 'Exo-Medium';
      }
      .tx-tfm{
      text-transform:uppercase;
      }
-     .mybtn{
-     border-radius:50px;
+     .login-btn-box{
+      margin-right: 2.5rem;
+      margin-left: 2.5rem;
+      width : auto;
+      margin-top: 2rem;
+    }
+
+     .login-btn{
+       padding: 0.4rem;
+       width: 100%;
+       font-family: 'Leferi-Regular';
      }
-    
+     .signup-btn-box{
+      margin-right: 2.5rem;
+      margin-left: 2.5rem;
+      width : auto;
+    }
+     .signup-btn{
+      padding: 0.3rem;
+      width: 100%;
+      font-family: 'Leferi-Regular';
+    }
      .login-or {
      position: relative;
      color: #aaa;

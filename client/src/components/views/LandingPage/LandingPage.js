@@ -44,27 +44,27 @@ function LandingPage(props) {
 
         // </div>
         <div className="landing-page">
-            <div className="container">
+            <div className="container landing-page-margin">
             <div className="row">
                 <div className="col-md-5 mx-auto">
                 <div id="first">
                     <div className="myform form ">
                         <div className="logo mb-3">
                             <div className="col-md-12 text-center">
-                                <h1>Login</h1>
+                                <h1 className='login-text'>Studeet</h1>
                             </div>
                         </div>
                     <form action="" method="post" name="login">
-                            <div className="form-group">
-                                <label>Email address</label>
+                            <div className="form-group email-box">
+                                <label className='email-text'>Email</label>
                                 <input type="email" name="email"  className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"/>
                             </div>
-                            <div className="form-group">
-                                <label>Password</label>
+                            <div className="form-group password-box">
+                                <label className='password-text'>Password</label>
                                 <input type="password" name="password" id="password"  className="form-control" aria-describedby="emailHelp" placeholder="Enter Password"/>
                             </div>
-                            <div className="col-md-12 text-center ">
-                                <button type="submit" className=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                            <div className="login-btn-box col-md-12 text-center ">
+                                <button type="submit" className=" login-btn btn btn-block btn-primary tx-tfm">로그인</button>
                             </div>
                             <div className="col-md-12 ">
                                 <div className="login-or">
@@ -73,8 +73,8 @@ function LandingPage(props) {
                                 </div>
                             </div>
                             <div className="col-md-12 mb-3">
-                                <p className="text-center">
-                                    <a className="google btn mybtn"><i className="fa fa-google-plus">
+                                <p className="signup-btn-box text-center">
+                                    <a className="google btn"><i className="signup-btn fa fa-google-plus">
                                     </i> Signup
                                     </a>
                                 </p>

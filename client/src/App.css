@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family : 'Exo-Bold';
+  src: url("./fonts/Exo-Bold.ttf");
+}
+
+@font-face {
+  font-family : 'Exo-Italic';
+  src: url("./fonts/Exo-Italic.ttf");
+}
+
+@font-face {
+  font-family : 'Exo-Light';
+  src: url("./fonts/Exo-Light.ttf");
+}
+
+@font-face {
+  font-family : 'Exo-Medium';
+  src: url("./fonts/Exo-Medium.ttf");
+}
+
+@font-face {
+  font-family : 'Leferi-Regular';
+  src: url("./fonts/LeferiBaseRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family : 'Leferi-Bold';
+  src: url("./fonts/LeferiPointBlack.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
