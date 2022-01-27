@@ -1,19 +1,11 @@
 const mysql = require('mysql');
-
+const passw = require('./db-password');
+console.log(passw)
 const mql = mysql.createConnection({
   host : 'localhost',
   user : 'root',
-  password : '200724s',
+  password : passw,
   database : 'crud_db'
 });
 
-// mql.connect(function(err) {
-//   if (err) throw err;
-//   console.log('mysql connected');
-//   const sql = ""
-//   mql.query(sql, function(err, result){
-//     if(err) throw err;
-//     console.log('table created');
-//   })
-// })
 module.exports = mql;

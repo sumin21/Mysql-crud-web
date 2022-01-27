@@ -10,6 +10,16 @@ const {auth} = require("./middleware/auth");
 
 
 const {creatUser, loginUser, authUser, logoutUser} = require('./user/userController');
+const {myPage} = require('./user/myPageController');
+
+const mysql = require('mysql');
+
+const mql = require('./models/mysql-db');
+
+mql.connect(function(err){
+  if(err) throw err;
+  console.log('mysql connected..')
+})
 
 //application/x-www-form-urlencoded 데이터를 분석해서 가져옴
 app.use(bodyParser.urlencoded({extended: true}));
@@ -40,6 +50,9 @@ app.get('/api/users/auth', auth, authUser);
 
 //logout (login된 상태이기 때문에 auth를 넣어준다.)
 app.get('/api/users/logout', auth, logoutUser);
+
+//mypage
+app.get('/api/users/mypage', auth, myPage);
 
 
 app.listen(port, () => {
