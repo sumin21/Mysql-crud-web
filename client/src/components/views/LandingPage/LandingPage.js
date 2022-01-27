@@ -33,7 +33,7 @@ const LandingPage = () => {
         axios.get(`/api/users/mypage`)
             .then(response => {
                 if (response.data.success) {
-                    navigate("/mypage", {tlqkf:'kk'});
+                    navigate("/mypage", {state:{name:response.data.name, email:response.data.email}});
                 } else {
                     alert('회원 정보를 불러오는 데에 실패 했습니다.')
                 }

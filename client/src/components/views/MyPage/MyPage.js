@@ -6,12 +6,13 @@ import { useLocation } from 'react-router-dom';
 const MyPage=() => {
     const names = useLocation();
 
-    console.log(names);
+    console.log(names.state.name);
 
     return (
         <div className='mypage-container'>
             <div>MyPage</div>
-            {/* <div></div> */}
+            <div>{names.state.name}</div>
+            <div>{names.state.email}</div>
         </div>
         
     )
