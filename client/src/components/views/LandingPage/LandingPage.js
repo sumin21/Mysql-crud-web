@@ -43,14 +43,18 @@ const LandingPage = () => {
 
     return (
         <div className='landingpage-container'>
-            <h2>시작 페이지</h2>
-            <Button onClick={onMyPageHandler} >
-                MyPage
-            </Button>
+            <div className='studeet-title'>
+                <h2 className='studeet-title-name'>Studeet</h2>
+            </div>
+            <div className='bodys'>
+                <Button onClick={onMyPageHandler} >
+                    MyPage
+                </Button>
 
-            <Button onClick={onClickHandler} >
-                로그아웃
-            </Button>
+                <Button onClick={onClickHandler} >
+                    로그아웃
+                </Button>
+            </div>
 
         </div>
         
