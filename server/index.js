@@ -3,7 +3,6 @@ const app = express()
 const port = 5000
 
 const bodyParser = require("body-parser");
-const config = require('./config/key');//
 const cookieParser = require("cookie-parser");
 
 const {auth} = require("./middleware/auth");
